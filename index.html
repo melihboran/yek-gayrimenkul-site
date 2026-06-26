@@ -27,6 +27,88 @@
     <link rel="stylesheet" href="assets/css/picarus.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
 
+    <style>
+:root {
+  --yek-red: #c8101a;
+  --yek-red-dark: #990c13;
+}
+
+/* Ana kırmızı alanlar */
+.bg-viking,
+.menu-popup .background,
+.search-popup .background,
+.quote-popup .background,
+.footer-field .bg-viking,
+.project-card,
+.project-map-el .image-gallery {
+  background: var(--yek-red) !important;
+  background-color: var(--yek-red) !important;
+}
+
+/* Tüm kırmızı butonlar */
+.button.bg-viking,
+a.bg-viking,
+.project-card {
+  background: var(--yek-red) !important;
+  background-color: var(--yek-red) !important;
+}
+
+.button.bg-viking .text,
+.button.bg-viking .icon,
+.button.bg-viking .icon-el,
+.project-card span {
+  color: #fff !important;
+}
+
+/* Buton hover */
+.button.bg-viking::before,
+.before\:bg-gothic::before,
+.before\:bg-black::before {
+  background: var(--yek-red-dark) !important;
+  background-color: var(--yek-red-dark) !important;
+}
+
+.button.bg-viking:hover {
+  box-shadow: 0 0 0 2px var(--yek-red), 0 15px 30px -15px rgba(200,16,26,.55) !important;
+}
+
+.button.bg-viking:hover .text,
+.button.bg-viking:hover .icon .icon-el {
+  color: #fff !important;
+}
+
+/* Menü arka planı */
+.menu-popup .background {
+  background: var(--yek-red) !important;
+  opacity: .96 !important;
+}
+
+/* Footer */
+.footer-field .bg-viking {
+  background: var(--yek-red) !important;
+}
+
+/* Form renkleri */
+.form .item input:not([type=checkbox]):focus,
+.form .item textarea:focus,
+.form .item select:focus {
+  border-color: var(--yek-red) !important;
+}
+
+/* Eski mavi hover efektlerini kırmızıya çevir */
+a:hover {
+  color: var(--yek-red);
+}
+
+/* Büyük footer Y dekorunu gizle */
+.footer-field::before,
+.footer-field::after,
+.footer-field .bg-viking::before,
+.footer-field .bg-viking::after {
+  display: none !important;
+}
+</style>
+
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-XDVV91XPSM"></script>
     <script>
@@ -331,8 +413,8 @@ style="
 display:inline-flex;
 align-items:center;
 padding:16px 34px;
-background:#69d0f3;
-color:#111;
+background:#c8101a;
+color:#fff;
 border-radius:999px;
 font-weight:600;
 text-decoration:none;

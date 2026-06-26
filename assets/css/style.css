@@ -2785,7 +2785,9 @@ header .tools .menu-trigger.active:hover svg {
 }
 
 .quote-popup .custom-select option {
-    background-color: #6fc8dd
+        background: #c8101a !important;
+    color: #fff !important;
+    transition: .3s;
 }
 
 .map-popup {
@@ -2816,7 +2818,9 @@ header .tools .menu-trigger.active:hover svg {
 }
 
 .map-popup .wrapper .content .point {
-    background-color: #6fc8dd;
+        background: #c8101a !important;
+    color: #fff !important;
+    transition: .3s;
     -webkit-transform: translateX(-50%) translateY(-50%);
     -moz-transform: translateX(-50%) translateY(-50%);
     -ms-transform: translateX(-50%) translateY(-50%);
@@ -2877,7 +2881,9 @@ header .tools .menu-trigger.active:hover svg {
     height: 0;
     border-style: solid;
     border-width: 12px 10px 0 0;
-    border-color: #6fc8dd rgba(0,0,0,0) rgba(0,0,0,0) rgba(0,0,0,0);
+        background: #c8101a !important;
+    color: #fff !important;
+    transition: .3s;
     -webkit-backface-visibility: hidden;
     -moz-backface-visibility: hidden;
     backface-visibility: hidden;
@@ -2926,9 +2932,9 @@ header .tools .menu-trigger.active:hover svg {
     -webkit-border-radius: 100%;
     -moz-border-radius: 100%;
     border-radius: 100%;
-    -webkit-box-shadow: 0 0 0 1px #6fc8dd;
-    -moz-box-shadow: 0 0 0 1px #6fc8dd;
-    box-shadow: 0 0 0 1px #6fc8dd;
+    background: #c8101a !important;
+    color: #fff !important;
+    transition: .3s;
     opacity: 0
 }
 
@@ -2974,7 +2980,9 @@ header .tools .menu-trigger.active:hover svg {
 }
 
 .map-popup .wrapper .content .point .tooltip .category {
-    background-color: #6fc8dd;
+        background: #c8101a !important;
+    color: #fff !important;
+    transition: .3s;
     padding: 5px 15px;
     color: #394042
 }
@@ -3059,7 +3067,9 @@ header .tools .menu-trigger.active:hover svg {
 }
 
 .cookie-bar .cookie-content .text-field .cookie-icon path {
-    fill: #6fc8dd
+        background: #c8101a !important;
+    color: #fff !important;
+    transition: .3s;
 }
 
 .cookie-bar .cookie-content .button-field .accept:hover .icon {
@@ -5260,4 +5270,101 @@ header .tools .menu-trigger.active:hover svg {
   .menu-popup .call {
     display: none !important;
   }
+}
+
+/* =========================
+   YEK KIRMIZI RENK DÜZENİ
+========================= */
+
+:root {
+  --yek-red: #c8101a;
+  --yek-red-dark: #990c13;
+}
+
+/* Mavi/turkuaz zeminleri kırmızı yap */
+.bg-viking,
+.footer-field .bg-viking,
+.menu-popup .background,
+.search-popup .background,
+.quote-popup .background,
+.project-card,
+.image-gallery {
+  background-color: var(--yek-red) !important;
+}
+
+/* Butonlar */
+.button.bg-viking {
+  background-color: var(--yek-red) !important;
+}
+
+.button.bg-viking .text,
+.button.bg-viking .icon,
+.button.bg-viking .icon-el {
+  color: #fff !important;
+}
+
+.button.bg-viking:hover {
+  box-shadow: 0 0 0 2px var(--yek-red), 0 15px 30px -15px rgba(200, 16, 26, .55) !important;
+}
+
+.button.bg-viking:hover .text,
+.button.bg-viking:hover .icon .icon-el {
+  color: var(--yek-red) !important;
+}
+
+/* Buton hover arka planı */
+.before\:bg-gothic::before,
+.before\:bg-black::before {
+  background-color: var(--yek-red-dark) !important;
+}
+
+/* Kurumsal butonu gibi inline style verilmiş butonları kırmızı yap */
+a[style*="background:#69d0f3"],
+a[style*="background: #69d0f3"] {
+  background: var(--yek-red) !important;
+  color: #fff !important;
+}
+
+/* Menü popup kırmızı */
+.menu-popup .background {
+  background-color: var(--yek-red) !important;
+  opacity: .96 !important;
+}
+
+/* Footer kırmızı */
+.footer-field .bg-viking {
+  background-color: var(--yek-red) !important;
+}
+
+/* İlan kartındaki yuvarlak ikon */
+.project-map-el .image-gallery {
+  background-color: var(--yek-red) !important;
+}
+
+/* Form focus / checkbox / vurgu renkleri */
+.form .item input:not([type=checkbox]):focus,
+.form .item textarea:focus,
+.form .item select:focus {
+  border-color: var(--yek-red) !important;
+}
+
+.custom-acceptance-input .box input:checked + .checkbox {
+  box-shadow: 0 0 0 1px var(--yek-red), 0 15px 30px -5px rgba(200,16,26,.3) !important;
+}
+
+.custom-acceptance-input .box .checkbox::after {
+  background-color: var(--yek-red) !important;
+}
+
+/* Link hover */
+a:hover {
+  color: var(--yek-red);
+}
+
+/* Büyük footer Y dekorunu gizle */
+.footer-field::before,
+.footer-field::after,
+.footer-field .bg-viking::before,
+.footer-field .bg-viking::after {
+  display: none !important;
 }
