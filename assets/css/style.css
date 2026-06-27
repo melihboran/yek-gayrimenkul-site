@@ -5624,3 +5624,533 @@ a:hover {
 .menu-popup .main-menu-fix .menu a:first-child {
     margin-top: 45px !important;
 }
+
+/* İlanlar sayfası header logo düzeltmesi */
+.header-field .yek-logo-link {
+    width: 170px !important;
+    max-width: 170px !important;
+    height: auto !important;
+    display: block !important;
+    flex-shrink: 0 !important;
+}
+
+.header-field .yek-logo-header {
+    width: 170px !important;
+    max-width: 170px !important;
+    height: auto !important;
+    display: block !important;
+    object-fit: contain !important;
+}
+
+@media(max-width:768px){
+    .header-field .yek-logo-link,
+    .header-field .yek-logo-header {
+        width: 130px !important;
+        max-width: 130px !important;
+    }
+}
+
+.ilan-filter-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    align-items: center;
+}
+
+.ilan-filter-btn {
+    min-width: 135px;
+    padding: 18px 28px;
+    border-radius: 999px;
+    border: 1px solid rgba(255,255,255,.28);
+    background: rgba(255,255,255,.06);
+    color: #fff;
+    font-size: 15px;
+    line-height: 1.2;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.ilan-filter-btn:hover,
+.ilan-filter-btn.active {
+    background: #c8101a;
+    border-color: #c8101a;
+    color: #fff;
+}
+
+@media(max-width:768px){
+    .ilan-filter-options {
+        flex-direction: column;
+    }
+
+    .ilan-filter-btn {
+        width: 100%;
+    }
+}
+
+.listing-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 22px;
+}
+
+.listing-card {
+    background: rgba(16,16,19,.55);
+    border: 1px solid rgba(255,255,255,.12);
+    border-radius: 16px;
+    overflow: hidden;
+    color: #fff;
+}
+
+.listing-image {
+    height: 260px;
+    position: relative;
+    overflow: hidden;
+}
+
+.listing-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: .45s ease;
+}
+
+.listing-card:hover .listing-image img {
+    transform: scale(1.06);
+}
+
+.listing-detail-btn {
+    position: absolute;
+    left: 18px;
+    bottom: 18px;
+    border: 0;
+    border-radius: 999px;
+    padding: 13px 20px;
+    background: rgba(16,16,19,.78);
+    color: #fff;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.listing-content {
+    padding: 20px 18px 22px;
+}
+
+.listing-badge {
+    display: inline-block;
+    padding: 6px 9px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 14px;
+}
+
+.listing-badge.satilik {
+    background: #c8101a;
+}
+
+.listing-badge.kiralik {
+    background: #1778d4;
+}
+
+.listing-content h3 {
+    color: #fff;
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    line-height: 1.2;
+}
+
+.listing-content .location {
+    color: rgba(255,255,255,.75);
+    font-size: 15px;
+    margin-bottom: 18px;
+}
+
+.listing-content .price {
+    font-size: 22px;
+    color: #fff;
+    font-weight: 800;
+}
+
+.listing-note {
+    text-align: center;
+    color: rgba(255,255,255,.7);
+    margin-top: 35px;
+}
+
+/* Modal */
+.listing-modal {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    display: none;
+}
+
+.listing-modal.active {
+    display: block;
+}
+
+.listing-modal-bg {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,.72);
+    backdrop-filter: blur(8px);
+}
+
+.listing-modal-content {
+    position: relative;
+    max-width: 980px;
+    width: calc(100% - 40px);
+    max-height: calc(100vh - 40px);
+    overflow-y: auto;
+    margin: 20px auto;
+    background: rgba(16,16,19,.94);
+    border: 1px solid rgba(255,255,255,.16);
+    border-radius: 20px;
+    padding: 28px;
+    color: #fff;
+}
+
+.listing-modal-close {
+    position: absolute;
+    top: 18px;
+    right: 22px;
+    background: transparent;
+    border: 0;
+    color: #fff;
+    font-size: 42px;
+    cursor: pointer;
+    z-index: 3;
+}
+
+.listing-modal-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 34px;
+}
+
+.modal-img {
+    width: 100%;
+    height: 360px;
+    object-fit: cover;
+    border-radius: 14px;
+    display: block;
+}
+
+.modal-desc {
+    margin-top: 22px;
+}
+
+.modal-desc h4 {
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.modal-desc p,
+.modal-location,
+.modal-small-note {
+    color: rgba(255,255,255,.75);
+}
+
+#modalTitle {
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 1.2;
+    margin: 12px 0 10px;
+}
+
+.modal-info {
+    margin-top: 25px;
+    border-top: 1px solid rgba(255,255,255,.14);
+}
+
+.modal-info div {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(255,255,255,.08);
+}
+
+.modal-info span {
+    color: rgba(255,255,255,.75);
+}
+
+.modal-info strong {
+    color: #fff;
+    text-align: right;
+}
+
+.modal-link-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 26px;
+    height: 56px;
+    border-radius: 8px;
+    background: #c8101a;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.modal-small-note {
+    text-align: center;
+    margin-top: 15px;
+}
+
+@media(max-width:1200px){
+    .listing-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media(max-width:768px){
+    .listing-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .listing-modal-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .modal-img {
+        height: 250px;
+    }
+}
+
+/* İlanlar hero düzeni */
+.breadcrumb {
+    height: 620px !important;
+    overflow: hidden;
+}
+
+.breadcrumb .background .image {
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    width: 72% !important;
+    max-height: 100% !important;
+}
+
+.breadcrumb .background .image img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    opacity: .55 !important;
+}
+
+/* Filtreleri görselin altına bindir */
+.ilan-filter {
+    margin-top: -115px !important;
+    margin-bottom: 70px !important;
+}
+
+.ilan-filter-head {
+    margin-bottom: 28px;
+}
+
+.ilan-filter-head h1 {
+    color: #fff;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.ilan-filter-options {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    flex-wrap: wrap;
+}
+
+.ilan-filter-btn {
+    min-width: 145px;
+    height: 58px;
+    border-radius: 999px;
+    border: 1px solid rgba(255,255,255,.35);
+    background: rgba(0,0,0,.18);
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+.ilan-filter-btn:hover,
+.ilan-filter-btn.active {
+    background: #c8101a;
+    border-color: #c8101a;
+    color: #fff;
+}
+
+/* Kart alanını biraz yukarı ve koyu zeminle toparla */
+.listing-section {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+}
+
+@media(max-width: 768px) {
+    .breadcrumb {
+        height: 460px !important;
+    }
+
+    .breadcrumb .background .image {
+        width: 100% !important;
+    }
+
+    .ilan-filter {
+        margin-top: -70px !important;
+    }
+
+    .ilan-filter-head h1 {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .ilan-filter-options {
+        justify-content: center;
+    }
+
+    .ilan-filter-btn {
+        width: 100%;
+    }
+}
+
+/* Header logo - tüm çakışan kuralları geçersiz kıl */
+.header-field .yek-logo-link,
+.header-field .logo {
+    width: 120px !important;
+    max-width: 120px !important;
+    min-width: unset !important;
+    flex-shrink: 0;
+    display: block !important;
+}
+
+.header-field .yek-logo-header,
+.header-field .logo img {
+    width: 100% !important;
+    max-width: 120px !important;
+    height: auto !important;
+    display: block !important;
+}
+
+@media (max-width: 768px) {
+    .header-field .yek-logo-link,
+    .header-field .logo {
+        width: 90px !important;
+        max-width: 90px !important;
+    }
+    .header-field .yek-logo-header,
+    .header-field .logo img {
+        max-width: 90px !important;
+    }
+}
+
+/* Menü popup - tüm sayfalarda tutarlı konum */
+.menu-popup {
+    top: 0 !important;
+    padding-top: 0 !important;
+    height: 100vh !important;
+    max-height: 100vh !important;
+}
+
+.menu-popup .wrapper {
+    height: 100vh !important;
+    min-height: 100vh !important;
+    border-radius: 20px !important;
+    overflow: hidden !important;
+}
+
+.menu-popup .content {
+    padding-top: 120px !important;
+    height: 100vh !important;
+    overflow-y: auto !important;
+    overflow-x: hidden !important;
+    box-sizing: border-box !important;
+}
+
+/* Ana menü linkleri her zaman tıklanabilir */
+.menu-popup .main-menu-fix {
+    position: relative !important;
+    z-index: 50 !important;
+    pointer-events: auto !important;
+    margin-top: 10 !important;
+}
+
+.menu-popup .main-menu-fix .menu a {
+    pointer-events: auto !important;
+    position: relative !important;
+    z-index: 50 !important;
+    display: flex !important;
+}
+
+/* İlk link için üst margin kaldır */
+.menu-popup .main-menu-fix .menu a:first-child {
+    margin-top: 0 !important;
+}
+
+/* Menü içeriğini aşağı kaydır */
+.menu-popup .content {
+    padding-top: 180px !important;
+}
+
+@media (max-width: 1024px) {
+    .menu-popup .content {
+        padding-top: 150px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .menu-popup .content {
+        padding-top: 130px !important;
+    }
+}
+
+.about-split-img {
+    height: 480px;
+    object-fit: cover;
+}
+
+@media (max-width: 1024px) {
+    .about-split-img {
+        height: 360px;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-split-img {
+        height: 260px;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-split-img {
+        height: 200px;
+    }
+}
+
+/* Menü kapatma butonu hover rengi */
+header .tools .menu-trigger::before,
+.menu-popup .close::before,
+.popup-general .close::before {
+    background-color: rgba(255, 255, 255, 0.15) !important;
+}
+
+header .tools .menu-trigger:hover::before,
+.popup-general .close:hover::before {
+    background-color: rgba(255, 255, 255, 0.2) !important;
+}
+
+header .tools .search-trigger::before,
+header .tools .menu-trigger::before,
+header .tools .call-mobile::before {
+    background-color: rgba(255, 255, 255, 0.15) !important;
+}
+
+header .tools .search-trigger:hover::before,
+header .tools .menu-trigger:hover::before,
+header .tools .call-mobile:hover::before {
+    background-color: rgba(255, 255, 255, 0.2) !important;
+}

@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1782573735,
+        "baslik": "deneme",
+        "durum": "kiralik",
+        "kategori": "daire",
+        "fiyat": "20.000",
+        "konum": "istanbul ",
+        "oda": "2+1",
+        "brut": "190",
+        "net": "190",
+        "bina_yasi": "2",
+        "kat": "2",
+        "isitma": "var",
+        "banyo": "1",
+        "balkon": "2",
+        "otopark": "var",
+        "aciklama": "",
+        "link": "http:\/\/127.0.0.1:5501\/projeler\/1.html",
+        "gorsel": "uploads\/ilanlar\/ilan_1782573735_5181.png",
+        "created_at": "2026-06-27 15:22:15"
+    }
+]
