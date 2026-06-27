@@ -5368,3 +5368,259 @@ a:hover {
 .footer-field .bg-viking::after {
   display: none !important;
 }
+
+.breadcrumb .background::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55);
+    z-index: 1;
+}
+
+.breadcrumb .background .wrapper {
+    position: relative;
+    z-index: 0;
+}
+
+.breadcrumb .content {
+    position: relative;
+    z-index: 2;
+}
+
+.header-field .logo img{
+    width:170px;
+    height:auto;
+    display:block;
+}
+
+@media(max-width:768px){
+    .header-field .logo img{
+        width:140px;
+    }
+}
+
+@media(max-width:480px){
+    .header-field .logo img{
+        width:110px;
+    }
+}
+
+.contact-hero .background::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55);
+    z-index: 1;
+}
+
+.contact-hero .background .wrapper {
+    position: relative;
+    z-index: 0;
+}
+
+.contact-hero .content {
+    position: relative;
+    z-index: 2;
+}
+
+.contact-hero .page-title {
+    font-size: 72px !important;
+    line-height: 1.1 !important;
+    font-weight: 300 !important;
+}
+
+@media (max-width: 768px) {
+    .contact-hero .page-title {
+        font-size: 42px !important;
+    }
+}
+.contact-hero .content .md\:container {
+    justify-content: flex-start !important;
+}
+
+.contact-hero .page-info {
+    margin-left: 60px !important;
+    margin-top: 120px !important;
+}
+
+@media(max-width:768px){
+    .contact-hero .page-info {
+        margin-left: 0 !important;
+        margin-top: 80px !important;
+        text-align: center;
+    }
+}
+
+.contact-info-strip {
+  margin-top: -85px;
+  margin-bottom: 90px;
+}
+
+.contact-info-box {
+  background: rgba(16,16,19,.78);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(255,255,255,.14);
+  border-radius: 24px;
+  padding: 34px 42px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 28px;
+}
+
+.contact-info-item {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  position: relative;
+}
+
+.contact-info-item:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  right: -14px;
+  top: 10%;
+  width: 1px;
+  height: 80%;
+  background: rgba(255,255,255,.18);
+}
+
+.contact-info-icon {
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  background: #cf101d;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  flex-shrink: 0;
+}
+
+.contact-info-title {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.3;
+  margin-bottom: 5px;
+}
+
+.contact-info-text {
+  color: rgba(255,255,255,.85);
+  font-size: 16px;
+  line-height: 1.45;
+}
+
+.contact-info-text:hover {
+  color: #fff;
+}
+
+@media(max-width:1024px){
+  .contact-info-box {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .contact-info-item::after {
+    display: none;
+  }
+}
+
+@media(max-width:600px){
+  .contact-info-strip {
+    margin-top: 30px;
+  }
+
+  .contact-info-box {
+    grid-template-columns: 1fr;
+    padding: 28px 24px;
+  }
+}
+
+.header-field .logo img {
+    width: 170px;
+    height: auto;
+    display: block;
+}
+
+@media(max-width:768px){
+    .header-field .logo img {
+        width: 140px;
+    }
+}
+
+@media(max-width:480px){
+    .header-field .logo img {
+        width: 110px;
+    }
+}
+
+.header-field .logo{
+    width:170px !important;
+    display:block;
+    flex-shrink:0;
+}
+
+.header-field .logo img{
+    width:170px !important;
+    height:auto !important;
+    display:block;
+    max-width:170px !important;
+}
+
+/* HEADER LOGO */
+.header-field .logo{
+    display:flex !important;
+    align-items:center;
+    width:220px !important;
+    height:auto !important;
+    flex-shrink:0;
+}
+
+.header-field .logo img,
+.yek-logo-header{
+    width:220px !important;
+    max-width:220px !important;
+    height:auto !important;
+    display:block;
+}
+
+/* Header logo */
+.yek-logo-link{
+    display:block;
+    width:180px;
+    flex-shrink:0;
+}
+
+.yek-logo-header{
+    width:100%;
+    height:auto;
+    display:block;
+    max-width:none !important;
+}
+
+.menu-popup .main-menu-fix,
+.menu-popup .main-menu-fix a {
+    position: relative;
+    z-index: 50;
+    pointer-events: auto;
+}
+
+.menu-popup .main-menu-fix {
+    margin-top: 95px !important;
+    position: relative !important;
+    z-index: 5 !important;
+}
+
+.menu-popup .main-menu-fix .menu {
+    transform: none !important;
+}
+
+.menu-popup .main-menu-fix a {
+    pointer-events: auto !important;
+    position: relative !important;
+    z-index: 10 !important;
+}
+
+.menu-popup .main-menu-fix .menu a:first-child {
+    margin-top: 45px !important;
+}
