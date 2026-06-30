@@ -6154,3 +6154,41 @@ header .tools .menu-trigger:hover::before,
 header .tools .call-mobile:hover::before {
     background-color: rgba(255, 255, 255, 0.2) !important;
 }
+
+.header-field .logo{
+    width:220px !important;
+    max-width:none !important;
+    flex:0 0 220px !important;
+}
+
+.header-field .logo img{
+    width:220px !important;
+    max-width:none !important;
+    height:auto !important;
+}
+
+@media(max-width:768px){
+    .header-field .logo{
+        width:180px !important;
+        flex:0 0 180px !important;
+    }
+
+    .header-field .logo img{
+        width:180px !important;
+    }
+}
+
+/* Footer yazıları */
+footer,
+footer p,
+footer span,
+footer a,
+footer li,
+footer h1,
+footer h2,
+footer h3,
+footer h4,
+footer h5,
+footer h6 {
+    color: #fff !important;
+}
